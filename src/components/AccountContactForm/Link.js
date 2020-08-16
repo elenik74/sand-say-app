@@ -2,7 +2,13 @@ import React from "react";
 
 export const Link = () => {
     return (
-        <div className="link">@link-to-your-github</div>
+        <a
+            className="link"
+            href="https://github.com/elenik72/sand-say-app"
+            target='_blank'
+        >
+            @elenik72
+        </a>
     )
 }
 

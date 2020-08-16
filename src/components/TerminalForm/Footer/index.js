@@ -29,7 +29,13 @@ const FooterTerminal = (props) => {
                     >{messages.sendAction.defaultMessage}</button>
                 </li>
                 <li className='footer-nav__item footer__link'>
-                    {'Link'}
+                    <a
+                        className="link"
+                        href="https://github.com/elenik72/sand-say-app"
+                        target='_blank'
+                    >
+                        @elenik72
+                    </a>
                 </li>
                 <li
                     className='footer-nav__item footer__format'
