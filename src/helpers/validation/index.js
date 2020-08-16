@@ -20,7 +20,7 @@ export const setValidationError = {
     password: (str) => {
         if (str.length === 0) {
             return EMPTY_FIELD_STATUS;
-        } else if (/^((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W]).{8,20})$/.test(str)) {
+        } else if (/^[?!,.a-zA-Z0-9\s]+$/.test(str)) {
             return SUCCESS_STATUS;
         } else return INCORRECTLY_FILLED_STATUS;
     },

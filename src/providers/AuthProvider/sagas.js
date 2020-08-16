@@ -28,7 +28,7 @@ function* authorizeRequestGenerator(action) {
         const options = {
             action: SEND_SAY_ACTION.LOGIN,
             login: login.value,
-            passwd: "isa4Teevu",
+            passwd: password.value,
         };
         const result = yield call(request, options);
         if (result) {
