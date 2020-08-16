@@ -1,0 +1,168 @@
+.account-contract {
+    width: 520px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+    margin-top: 20px;
+}
+.account-contract-form__button {
+    padding-bottom: 30px;
+}
+.account-contract-form__button span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 36px;
+
+    color: #FFFFFF;
+}
+
+.loading {
+    content: url('../../svg/form-loader.svg');
+    position: relative;
+    top: 5px;
+    left: 0px;
+    animation: loader 1.5s linear infinite;
+
+}
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.success {
+    border: 2px solid #21c921;
+}
+
+.error {
+    border: 1px solid rgba(207, 44, 0, .5) !important;
+    box-shadow: 0px 0px 5px 0px rgba(207, 44, 0, 0.5) !important;
+}
+.error-label {
+    color: #CF2C00;
+}
+.account-contract-header{
+    margin: 40px 0px 0px 30px;
+    font-size: 24px;
+}
+.account-contract-header__error-block {
+    margin: 10px 0 0 42px;
+}
+
+.account-contract-header__span:nth-child(1){
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+
+    align-items: center;
+
+
+    color: #CF2C00;
+}
+.account-contract-header__span:nth-child(1):before{
+    content: url('../../svg/header-error.svg');
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 12px;
+    top: 15px;
+}
+.account-contract-header__span:nth-child(2){
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    /* identical to box height, or 167% */
+
+    display: flex;
+    align-items: center;
+    text-align: right;
+
+    /* Red */
+
+    color: #CF2C00;
+    opacity: 0.5;
+}
+.account-contract-header__span {
+
+}
+
+.account-contract-header__wrapper {
+    position: relative;
+    width: 460px;
+    height: 70px;
+
+    margin: 20px 0px 20px 0px;
+    background: rgba(207, 44, 0, 0.1);
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.account-contract-form {
+    padding: 0px 30px;
+}
+
+.account-contract-form__content,
+.account-contract-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.account-contract-form__content__label {
+    margin-bottom: 5px;
+}
+
+.account-contract-form__content__input {
+    background: #FFFFFF;
+
+    height: 40px;
+
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    font-size: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.account-contract-form__content__input:focus,
+.account-contract-form__content__input:active{
+    outline: none;
+}
+
+.label-block {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.label-block span {
+    font-size: 12px;
+
+    color: #999999;
+}
+
+.Wrapper{
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100%;
+}
+
+#password {
+    font-size: 60px;
+}
